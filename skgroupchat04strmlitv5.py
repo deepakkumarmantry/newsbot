@@ -142,8 +142,8 @@ with st.sidebar:
     api_key = st.text_input("Azure API Key", type="password", value="")
     endpoint = st.text_input("Azure Endpoint", value="https://xxxxxxxxxxxxx.openai.azure.com/")
     sendpoint = st.text_input("Azure Search Endpoint", value="https://xxxxxxxxxxxxxxxx.search.windows.net")
-    sapi_key = st.text_input("Azure Search Endpoint", value="",type="password")
-    sindex_name = st.text_input("Azure Search Endpoint", value="rag-xxxxxxxxxxxx")
+    sapi_key = st.text_input("Azure Search Key", value="",type="password")
+    sindex_name = st.text_input("Azure Search Name", value="rag-xxxxxxxxxxxx")
 
 st.title("News bot agent Demo")
 st.write("This demo runs a group chat between agents to iteratively refine the answers for  news bot")
